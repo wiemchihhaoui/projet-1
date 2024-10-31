@@ -1,0 +1,29 @@
+
+ALGORITHM projet
+VAR
+    nw,nv,i,l:INTEGER
+    str:STRING
+BEGIN
+    i:=0;
+    l:=0;
+    nw:=0;
+    nv:=0;
+    Read(str)
+    WHILE (str[i]<>".") DO
+        l:=l+1
+         IF (str[i] in "aeiuoAEIUO"):=vowel THEN
+        nv:=nv+1
+        IF (str[i]=" "):=" " THEN
+        nw:=nw+1
+        END_IF
+        i:=i+1
+    END_IF
+    END_WHILE
+       write("number of vowel", nv);
+       write("number of words", nW+1);
+       write("Number of characters", l+1);  
+       IF(str[l-1])=" " THEN
+        nW:=nw+1;
+        l:=l+1
+       END_IF
+END
